@@ -14,10 +14,10 @@ const word1 = "My";
 const word2 = "name";
 const word3 = "is";
 let fullName = `${word1} ${word2} ${word3}`;
-fullName += " Viktor";
+fullName += " Назар";
 alert(`Повне ім'я: ${fullName}`); 
 
 
-const userName = "Олександро";
+const userName = "Назар";
 const payment = 300;
 alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
