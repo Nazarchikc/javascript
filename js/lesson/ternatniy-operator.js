@@ -15,35 +15,35 @@
 //  - В кінці вивести повідомлення «Операція завершена»
 
 
-let balance = 10000;
-const userPayment = 20000;
-console.log(`Загальна вартість замовлення ${userPayment} кредитів. Перевіряємо кількість доступних коштів на рахунку`);
-if (userPayment <= balance) {
+// let balance = 10000;
+// const userPayment = 20000;
+// console.log(`Загальна вартість замовлення ${userPayment} кредитів. Перевіряємо кількість доступних коштів на рахунку`);
+// if (userPayment <= balance) {
   // balance = balance - userPayment;
-  balance -= userPayment;
-  console.log(`На рахунку залишилося ${balance} кредитів`);
-} else {
-  console.log("На рахунку недостатньо коштів для проведення операції!");
-}
-console.log("Операція завершена");
+//   balance -= userPayment;
+//   console.log(`На рахунку залишилося ${balance} кредитів`);
+// } else {
+//   console.log("На рахунку недостатньо коштів для проведення операції!");
+// }
+// console.log("Операція завершена");
 
 
 
-// ТЕРНАРНИЙ ОПЕРАТОР
+// // ТЕРНАРНИЙ ОПЕРАТОР
 
-const type1 = age >= 18 ? "adult" : "child"
+// const type1 = age >= 18 ? "adult" : "child"
 
 // const a = 4;
 // const b = 5;
 // let result;
-if (a + b < 4) {
-  result = 'Нижче';
-} else {
-  result = 'Вище';
-}
-console.log(result)
+// if (a + b < 4) {
+//   result = 'Нижче';
+// } else {
+//   result = 'Вище';
+// }
+// console.log(result)
 
-const result = a + b < 4 ? 'Нижче' : 'Вище'
+// const result = a + b < 4 ? 'Нижче' : 'Вище'
 
 
 
@@ -53,17 +53,17 @@ const result = a + b < 4 ? 'Нижче' : 'Вище'
 //   Якщо відвідувач вводить “ECMAScript”, виведіть “Правильно!”, 
 //   в іншому випадку — виведіть: “Ви не знаєте? ECMAScript!”
 // const userInput = "EcMAScriPt";
-const userInput = "jnoik";
+// const userInput = "jnoik";
 
 
-if( userInput === 'EcMAScriPt'){
-  console.log("Правильно!");
-} else{
-  console.log("Ви не знаєте? ECMAScript!");
+// if( userInput === 'EcMAScriPt'){
+//   console.log("Правильно!");
+// } else{
+//   console.log("Ви не знаєте? ECMAScript!");
   
-}
+// }
 
-const ansver = userInput === 'EcMAScriPt' ? "Правильно!" : "Ви не знаєте? ECMAScript!"
+// const ansver = userInput === 'EcMAScriPt' ? "Правильно!" : "Ви не знаєте? ECMAScript!"
 
 
 
