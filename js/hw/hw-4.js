@@ -46,20 +46,20 @@
 // виведіть "Перенаправлення на іншу сторінку", якщо ні —
 // "Помилка: неправильне заповнення".
 
-const nameVar = "nazar";
-const emailVar = "podobivskijnazar@gmail.com"
-const passwordVar = "nazar201010"
+// const nameVar = "nazar";
+// const emailVar = "podobivskijnazar@gmail.com"
+// const passwordVar = "nazar201010"
 
-if (
-    nameVar.length >= 3 &&
-    emailVar.includes("@") &&
-    emailVar.lastIndexOf(".") > emailVar.indexOf("@") &&
-    passwordVar.length >= 6
-) {
-    console.log("Перенаправлення на іншу сторінку");
-} else {
-    console.log("Помилка: неправильне заповнення");
-}
+// if (
+//     nameVar.length >= 3 &&
+//     emailVar.includes("@") &&
+//     emailVar.lastIndexOf(".") > emailVar.indexOf("@") &&
+//     passwordVar.length >= 6
+// ) {
+//     console.log("Перенаправлення на іншу сторінку");
+// } else {
+//     console.log("Помилка: неправильне заповнення");
+// }
 
 
 
