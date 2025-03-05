@@ -1,26 +1,26 @@
-const calculateTotal = function (items) {
-    let total = 0;
+// const calculateTotal = function (items) {
+//     let total = 0;
   
-      items.forEach(item => (total += item));
+//       items.forEach(item => (total += item));
   
-    return total;
-  }
-//   console.log(calculateTotal([12, 85, 37, 4])); //повертає 138
-//   console.log(calculateTotal([164, 48, 291])); //повертає 503
+//     return total;
+//   }
+// //   console.log(calculateTotal([12, 85, 37, 4])); //повертає 138
+// //   console.log(calculateTotal([164, 48, 291])); //повертає 503
 
 
 
-  // 1 Зроби новий масив планет у аперкейс
-const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+//   // 1 Зроби новий масив планет у аперкейс
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
-const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
-// console.log(planetsInUpperCase); // ["EARTH", "MARS", "VENUS", "JUPITER"]
-// Катерина Володимирівна
-// 19:15
-// 2 Збережи у змінній planetsLengths масив, 
-// що буде складатися з довжин назв кожної планети 
-const planetsLengths = planets.map(planet => planet.length);
-console.log(planetsLengths);
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// // console.log(planetsInUpperCase); // ["EARTH", "MARS", "VENUS", "JUPITER"]
+// // Катерина Володимирівна
+// // 19:15
+// // 2 Збережи у змінній planetsLengths масив, 
+// // що буде складатися з довжин назв кожної планети 
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
 
 
 
@@ -36,29 +36,75 @@ const players = [
 
 
 
+// // Використовуючи 👆 масив об’єктів виконай наступні завдання:
+// //map()
+// const playersNames = players.map(player => player.name);
+// const newplayersName = player.map(({name})=> name)
+// // Отримати масив імен всіх гравців
+// // Збільшити кількість поінтів кожного гравця на 10% (розпорошуємо старий об'єкт)
+// // Збільшити кількість годин гравця по id. Переписати на тернарник
+// //filter()
+// const playersOnline = players.filter(player => player.online)
+// console.log(playersOnline);
+// // Отримати масив всіх гравців онлайн
+    
 
-const playersNames = players.map(player => player.name);
+
+// // // Отримати масив всіх гравців офлайн
+// const playerOfline = players.filter(player => !player.online);
+// console.log(playerOfline);
+
+ 
+// // // Отримати масив всіх хардкорних гравців з часом більше 250
+
+// const hardkorPlayers = players.filter(player => player.timePlayed > 250)
+// console.log(hardkorPlayers);
 
 
 
-const newplayersName = player.map(({name})=> name)
 
-// Катерина Володимирівна
-// 19:16
-// Використовуючи 👆 масив об’єктів виконай наступні завдання:
-//map()
-// Отримати масив імен всіх гравців
-// Збільшити кількість поінтів кожного гравця на 10% (розпорошуємо старий об'єкт)
-// Збільшити кількість годин гравця по id. Переписати на тернарник
-//filter()
-// Отримати масив всіх гравців онлайн
-// Отримати масив всіх гравців офлайн
-// Отримати масив всіх хардкорних гравців з часом більше 250
-//Find()
-// Знайти гравця по id
-// Знайти гравця по імені
-//every()
-// Перевірити чи всі гравці
-//every()
-// Перевірити чи всі гравці мають час більше 200
-// Перевірити чи всі гравці онлайн
+// //Find()
+// // Знайти гравця по id
+
+
+
+
+// const playerById = players.find(player => player.id  === "player-4");
+// console.log(playerById);
+
+// // Знайти гравця по імені
+
+// const payerByName = players.find(player => player.name === "Poly")
+// console.log(payerByName);
+
+// //every()
+// // Перевірити чи всі гравці мають час більше 200
+// const timePlayers = players.every(player => player.timePlayed  > 200)
+// console.log(timePlayers);
+
+// //every()
+// // Перевірити чи всі гравці мають час більше 200
+// // Перевірити чи всі гравці онлайн
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
