@@ -38,6 +38,11 @@ const players = [
 
 
 const playersNames = players.map(player => player.name);
+
+
+
+const newplayersName = player.map(({name})=> name)
+
 // Катерина Володимирівна
 // 19:16
 // Використовуючи 👆 масив об’єктів виконай наступні завдання:
