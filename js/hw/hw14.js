@@ -175,32 +175,37 @@ const users = [
 
 //Завдання 1
 // Отримати масив імен всіх користувачів (поле name).
-// const getUserNames = users.map(user => user.name)
+const getUserNames = users => {
+    return users.map(user => user.name)
+  };
 // console.log(getUserNames);
 
 
 //Завдання 2
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
-// const getUsersWithEyeColor = users.map(user => user.eyeColor )
+// const getUsersWithEyeColor = users => {
+//    return users.map (user => user.eyeColor )
+// }
 // console.log(getUsersWithEyeColor);
 
 //Завдання 3 
 // Отримати масив імен користувачів за статтю (поле gender)
 
-// const userGender = users.filter(user => user.gender)
+// const userGender = users => {
+//    return users.filter (user => user.gender)
+// }
 // console.log(userGender);
 
 //Завдання 4
 // Отримати масив тільки неактивних користувачів (поле isActive)
-// const userAchive = users.filter(user => !user.isActive)
+// const userAchive = users => {
+//   return users.filter (user => !user.isActive)
+// }
 // console.log(userAchive);
 
 //Завдання 5
 // Отримати користувача (не масив) по email (поле email, він унікальний).
-// const userEmail = users.find(user => user.email === 'shereeanthony@kog.com')
+// const userEmail = users => {
+//    return users.find (user => user.email === 'shereeanthony@kog.com')
+// }
 // console.log(userEmail);
-
-
-
-
-
