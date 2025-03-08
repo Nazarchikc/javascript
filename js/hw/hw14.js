@@ -175,37 +175,49 @@ const users = [
 
 //Завдання 1
 // Отримати масив імен всіх користувачів (поле name).
-const getUserNames = users => {
-    return users.map(user => user.name)
-  };
-// console.log(getUserNames);
+// const getUserNames = users => {
+//     return users.map(user => user.name)
+//   };
+  
+//   console.log(getUserNames(users));
+  // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 
 //Завдання 2
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
-// const getUsersWithEyeColor = users => {
-//    return users.map (user => user.eyeColor )
-// }
-// console.log(getUsersWithEyeColor);
+
+// const getUsersWithEyeColor = (users, color) => {
+//     return users.map (user => user.eyeColor )
+//   };
+  
+//   console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
 
 //Завдання 3 
 // Отримати масив імен користувачів за статтю (поле gender)
 
-// const userGender = users => {
-//    return users.filter (user => user.gender)
-// }
-// console.log(userGender);
+
+// const getUsersWithGender = (users, gender) => {
+//     return users.filter (user => user.gender)
+//   };
+  
+//   console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 //Завдання 4
 // Отримати масив тільки неактивних користувачів (поле isActive)
-// const userAchive = users => {
-//   return users.filter (user => !user.isActive)
-// }
-// console.log(userAchive);
+
+// const getInactiveUsers = users => {
+//     return users.filter (user => !user.isActive)
+//   };
+  
+//   console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
+
 
 //Завдання 5
 // Отримати користувача (не масив) по email (поле email, він унікальний).
-// const userEmail = users => {
-//    return users.find (user => user.email === 'shereeanthony@kog.com')
-// }
-// console.log(userEmail);
+
+const getUserWithEmail = (users, email) => {
+    return users.find (user => user.email)
+  };
+  
+  console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {об'єкт користувача Sheree Anthony}
+  console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {об'єкт користувача Elma Head}
