@@ -91,7 +91,49 @@ const user = {
 
 
 
+  function getAllPropValues(arr, prop) {
+    return arr.reduce((values, obj) => {
+      if (obj.hasOwnProperty(prop)) {
+        values.push(obj[prop]);
+      }
+      return values;
+    }, []);
+  }
+  
+  const products = [
+    { name: "Apple", price: 100 },
+    { name: "Banana", price: 50 },
+    { name: "Cherry" }
+  ];
+  
+  console.log(getAllPropValues(products, "name")); 
+  console.log(getAllPropValues(products, "price"));
 
+
+
+
+
+  function calculateTotalPrice(allProducts, productName) {
+    let totalPrice = 0;
+    
+    for (const product of allProducts) {
+        if (product.name === productName) {
+            totalPrice = product.price * product.quantity;
+            break; 
+        }
+    }
+    
+    return totalPrice;
+}
+
+
+const product = [
+    { name: "Apple", price: 10, quantity: 5 },
+    { name: "Banana", price: 7, quantity: 3 },
+    { name: "Orange", price: 12, quantity: 4 }
+];
+
+console.log(calculateTotalPrice(products, "Banana")); 
 
   
   
