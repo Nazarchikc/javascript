@@ -1,140 +1,65 @@
-const user = {
-    name: "John",
-    age: 30,
-    hobby: "reading",
-    premium: true
-  };
-  user.mood = "happy";
-  user.hobby = "skydiving";
-  user.premium = false;
-  for (const key of Object.keys(user)) {
-    console.log(`${key}: ${user[key]}`);
-  }
+// // task 1
+// const user = {
+//     name: "John",
+//     hobby: "reading",
+//     premium: true
+// };
 
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
 
+// for (let key in user) {
+//     console.log(key + ':' + user[key]);
+// }
 
+//   // task 2
+// function countProps(obj) {
+//     return Object.keys(obj).length;
+// }
 
-  const user = {
-    name: "John",
-    age: 30,
-    hobby: "reading",
-    premium: true
-  };
-  user.mood = "happy";
-  user.hobby = "skydiving";
-  user.premium = false;
-  function countProps(obj) {
-    return Object.keys(obj).length;
-  }
-  for (const key of Object.keys(user)) {
-    console.log(`${key}: ${user[key]}`);
-  }
-  console.log("Кількість властивостей у user:", countProps(user));
+//   // task 3
+// function findBestEmployee(employees) {
+//     let bestEmployee = '';
+//     let maxTasks = 0;
+//     for (let employee in employees) {
+//         if (employees[employee] > maxTasks) {
+//         maxTasks = employees[employee];
+//         bestEmployee = employee;
+//     }
+//     }
+//     return bestEmployee;
+// }
 
+//   // task 4
+// function countTotalSalary(employees) {
+//     let totalSalary = 0;
+//     for (let key in employees) {
+//         totalSalary += employees[key];
+//     }
+//     return totalSalary;
+// }
 
+//   // task 5
+// function getAllPropValues(arr, prop) {
+//     let values = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i][prop] !== undefined) {
+//         values.push(arr[i][prop]);
+//     }
+//     }
+//     return values;
+// }
 
-
-
-  function findBestEmployee(employees) {
-    const bestEmployee = "";
-    let maxTasks = 0;
-    
-    for (const [name, tasks] of Object.entries(employees)) {
-      if (tasks > maxTasks) {
-        maxTasks = tasks;
-        bestEmployee = name;
-      }
-    }
-    
-    return bestEmployee;
-  }
-  const employees = {
-    'Анна': 5,
-    'Петро': 10,
-    'Марина': 3,
-    'Олексій': 8
-  };
-  
-  console.log(findBestEmployee(employees)); 
-
-
-
-
-  function findBestEmployee(employees) {
-    const bestEmployee = "";
-    let maxTasks = 0;
-    
-    for (const [name, tasks] of Object.entries(employees)) {
-      if (tasks > maxTasks) {
-        maxTasks = tasks;
-        bestEmployee = name;
-      }
-    }
-    
-    return bestEmployee;
-  }
-  
-  function countTotalSalary(employees) {
-    return Object.values(employees).reduce((total, salary) => total + salary, 0);
-  }
-  
-  
-  const salaries = {
-    'Анна': 2000,
-    'Петро': 3000,
-    'Марина': 2500,
-    'Олексій': 4000
-  };
-  
-  console.log(countTotalSalary(salaries))
-
-
-
-
-  function getAllPropValues(arr, prop) {
-    return arr.reduce((values, obj) => {
-      if (obj.hasOwnProperty(prop)) {
-        values.push(obj[prop]);
-      }
-      return values;
-    }, []);
-  }
-  
-  const products = [
-    { name: "Apple", price: 100 },
-    { name: "Banana", price: 50 },
-    { name: "Cherry" }
-  ];
-  
-  console.log(getAllPropValues(products, "name")); 
-  console.log(getAllPropValues(products, "price"));
-
-
-
-
-
+  // task 6
   function calculateTotalPrice(allProducts, productName) {
-    let totalPrice = 0;
-    
-    for (const product of allProducts) {
-        if (product.name === productName) {
-            totalPrice = product.price * product.quantity;
-            break; 
-        }
+    for (let i = 0; i < allProducts.length; i++) {
+        if (allProducts[i].name === productName) {
+        return allProducts[i].price * allProducts[i].quantity;
     }
-    
-    return totalPrice;
+    }
+    return 0;
 }
-
-
-const product = [
-    { name: "Apple", price: 10, quantity: 5 },
-    { name: "Banana", price: 7, quantity: 3 },
-    { name: "Orange", price: 12, quantity: 4 }
-];
-
-console.log(calculateTotalPrice(products, "Banana")); 
-
   
   
   

@@ -187,7 +187,7 @@ const users = [
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
 
 // const getUsersWithEyeColor = (users, color) => {
-//     return users.map (user => user.eyeColor )
+//     return users.filter (user => user.eyeColor === color)
 //   };
   
 //   console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
@@ -197,7 +197,7 @@ const users = [
 
 
 // const getUsersWithGender = (users, gender) => {
-//     return users.filter (user => user.gender)
+//     return users.filter (user => user.gender === gender)
 //   };
   
 //   console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
