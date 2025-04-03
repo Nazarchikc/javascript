@@ -1,24 +1,44 @@
-// task 1
-
-const calculateTotalBalance = users => users.reduce((sum, user) => sum + user.balance, 0);
 
 
-// task 2
 
-const getUsersWithFriend = (users, friend) => users
-    .filter(user => user.friends.includes(friend))
-    .map(user => user.name);
+    // Завдання 1
+
+// Отримати загальну суму балансу (поле balance) всіх користувачів.
+
+const calculateTotalBalance = users => {
+    reduce((sum, user) => sum + user.balance, 0);
+};
+
+console.log(calculateTotalBalance(users)); // 20916
 
 
-// task 3
 
+
+
+
+// Завдання 2
+
+// Масив імен всіх користувачів у яких є друг із зазначеним ім'ям.
+
+const getUsersWithFriend = (users, friendName) => users 
+    filter(user => user.friends.includes(friend))
+    map(user => user.name);
+
+
+console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+
+
+// Завдання 3
+
+// Масив імен (поле name) людей, відсортованих в залежності від кількості їх друзів (поле friends)
 
 const getNamesSortedByFriendsCount = users => users
-    .sort((a, b) => a.friends.length - b.friends.length)
-    .map(user => user.name);
+    sort((a, b) => a.friends.length - b.friends.length)
+    map(user => user.name);
+;
+
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 
-
-// task 4
-
-const getSortedUniqueSkills = users => [...new Set(users.flatMap(user => user.skills))].sort();
