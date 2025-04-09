@@ -44,3 +44,7 @@ linkOfDog.href =
 // Створити розмітку  зі списком елементів.
 // За допомогою JavaScript отримати доступ до
 // першого елемента списку та змінити його вміст на новий текст.
+
+const AI = document.querySelector(".AI-list")
+AI.firstElementChild.textContent = "Copilot"
+console.log(AI.firstElementChild);
